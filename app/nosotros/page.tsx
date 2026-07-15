@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { CheckIcon, CpuIcon, MessageIcon, ShieldIcon, SparkIcon } from "@/components/icons";
 import { ScrollReveal } from "@/components/scroll-reveal";
-import { generalWhatsappLink } from "@/lib/site";
 
 export const metadata = { title: "Nosotros" };
 
@@ -28,6 +27,6 @@ export default function NosotrosPage() {
       ].map(([Icon,title,text],index)=>{const C=Icon as typeof CpuIcon;return <ScrollReveal key={String(title)} delay={index*70}><article className="value-card"><C/><span>0{index+1}</span><h3>{String(title)}</h3><p>{String(text)}</p></article></ScrollReveal>})}
     </div></section>
 
-    <section className="final-cta compact-cta"><div className="cta-grid-bg"/><div className="shell final-cta-inner"><div><h2>¿Tenés una consulta?</h2><p>Hablemos y encontremos la mejor forma de avanzar.</p></div><a href={generalWhatsappLink} className="button button-dark" target="_blank" rel="noreferrer">Contactar a GZO</a></div></section>
+
   </main>;
 }

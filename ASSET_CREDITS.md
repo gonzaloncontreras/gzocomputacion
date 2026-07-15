@@ -1,15 +1,33 @@
-# Créditos de imágenes
+# Créditos de las fotografías
 
-Los logos de GZO Computación fueron entregados por el propietario del proyecto y se incluyen sin modificaciones.
+Todas las fotografías nuevas provienen de Pexels y fueron recortadas, optimizadas y ajustadas de color para integrarse con la identidad negra y naranja de GZO Computación.
 
-Fotografías utilizadas bajo la licencia gratuita de Pexels:
+La imagen `seguridad-respaldo-real.jpg` se conservó exactamente como estaba, tal como se solicitó.
 
-- Tima Miroshnichenko — reparación de computadora: https://www.pexels.com/photo/man-fixing-a-computer-6754846/
-- Field Engineer — redes y conectividad: https://www.pexels.com/photo/electronics-engineer-fixing-cables-on-server-442150/
-- Eden FC — mesa de trabajo técnico: https://www.pexels.com/photo/close-up-of-electronics-repair-workbench-36027861/
-- Atahan Demir — PC con iluminación: https://www.pexels.com/photo/modern-gaming-pc-setup-with-led-lights-30469968/
-- Andrey Matveev — componentes de PC: https://www.pexels.com/photo/high-performance-pc-build-with-gigabyte-components-28824342/
-- MART PRODUCTION — soporte remoto: https://www.pexels.com/photo/man-wearing-headset-using-laptop-at-the-office-7709122/
-- Prince Soumya — placa gráfica: https://www.pexels.com/photo/close-up-of-a-graphic-card-with-cooling-fans-34590948/
-- Pixabay — imagen real de seguridad informática en pantalla: https://www.pexels.com/photo/security-logo-60504/
-- Andrey Matveev — componentes reales de PC para asesoramiento de compra: https://www.pexels.com/photo/diverse-computer-storage-devices-on-desk-28456609/
+| Archivo | Uso en la web | Fuente / autor |
+|---|---|---|
+| `home-hero-pc.jpg` | Imagen principal de Inicio | Pexels, Atahan Demir — foto 30469973 |
+| `home-card-reparacion.jpg` | Tarjeta Reparación de PC | Pexels, Elias Gamez — foto 10558599 |
+| `home-card-notebooks.jpg` | Tarjeta Notebooks | Pexels, IT Services EU — foto 7639374 |
+| `home-card-armado.jpg` | Tarjeta Armado de PC | Pexels, Mikhail Nilov — foto 9242899 |
+| `home-card-hardware.jpg` | Tarjeta Actualización de hardware | Pexels, cottonbro studio — foto 4705607 |
+| `home-card-redes.jpg` | Tarjeta Redes y conectividad | Pexels, Brett Sayles — foto 4657256 |
+| `home-card-remoto.jpg` | Tarjeta Soporte remoto | Pexels, Mikhail Nilov — foto 6894221 |
+| `home-diagnostico.jpg` | Sección Diagnóstico técnico | Pexels, TheFullonMonet — foto 28380001 |
+| `home-componentes.jpg` | Sección Componentes / armado | Pexels, Mikhail Nilov — foto 9242898 |
+| `home-redes.jpg` | Sección Redes | Pexels, Cookiecutter — foto 1148820 |
+| `home-remoto.jpg` | Sección Soporte remoto de Inicio | Pexels, Annushka Ahuja — foto 8055437 |
+| `servicio-reparacion.jpg` | Servicio Reparación de PC | Pexels, Bulat843 — foto 38264265 |
+| `servicio-notebooks.jpg` | Servicio Notebooks | Pexels, Kieu Truong — foto 15554492 |
+| `servicio-armado-pc.jpg` | Servicio Armado de PC | Pexels, cottonbro studio — foto 4705603 |
+| `servicio-hardware.jpg` | Servicio Hardware | Pexels, cottonbro studio — foto 4705618 |
+| `servicio-redes.jpg` | Servicio Redes | Pexels, Brett Sayles — foto 2881233 |
+| `servicio-remoto.jpg` | Servicio Soporte remoto | Pexels, Mizuno K — foto 12911654 |
+| `asesoramiento-compra-real.jpg` | Servicio Asesoramiento de compra | Pexels, Atahan Demir — foto 33888375 |
+| `soporte-presencial-hero.jpg` | Portada Soporte presencial | Pexels, Quang Nguyen Vinh — foto 12741843 |
+| `soporte-presencial-componentes.jpg` | Sección interna Soporte presencial | Pexels, cottonbro studio — foto 4705628 |
+| `soporte-remoto-hero.jpg` | Portada Soporte remoto | Pexels, Mert Coşkun — foto 32341972 |
+| `nosotros-pc.jpg` | Página Nosotros | Pexels, Cookiecutter — foto 37605911 |
+| `seguridad-respaldo-real.jpg` | Servicio Seguridad y respaldo | Archivo existente, conservado sin cambios |
+
+Licencia de Pexels: https://www.pexels.com/license/

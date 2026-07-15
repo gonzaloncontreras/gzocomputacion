@@ -1,17 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRightIcon, CheckIcon, CpuIcon, DatabaseIcon, HeadsetIcon, LaptopIcon, MessageIcon, ShieldIcon, SparkIcon, WifiIcon, WrenchIcon } from "@/components/icons";
+import { ArrowRightIcon, CheckIcon, CpuIcon, DatabaseIcon, MessageIcon, ShieldIcon, WrenchIcon } from "@/components/icons";
 import { ScrollReveal } from "@/components/scroll-reveal";
-import { generalWhatsappLink, whatsappLink } from "@/lib/site";
-
-const services = [
-  { title: "Reparación de PC", text: "Diagnóstico de fallas, rendimiento, hardware, software y mantenimiento general.", icon: WrenchIcon, image: "/images/home-card-reparacion.jpg" },
-  { title: "Notebooks", text: "Revisión integral, limpieza, mejora de rendimiento y solución de problemas frecuentes.", icon: LaptopIcon, image: "/images/home-card-notebooks.jpg" },
-  { title: "Armado de PC", text: "Equipos pensados para estudio, trabajo, gaming o productividad profesional.", icon: CpuIcon, image: "/images/home-card-armado.jpg" },
-  { title: "Actualización de hardware", text: "SSD, memoria, placa de video y componentes para extender la vida útil del equipo.", icon: SparkIcon, image: "/images/home-card-hardware.jpg" },
-  { title: "Redes y conectividad", text: "Configuración de routers, Wi-Fi, cableado y resolución de problemas de conexión.", icon: WifiIcon, image: "/images/home-card-redes.jpg" },
-  { title: "Soporte remoto", text: "Asistencia online para software, configuración, errores y puesta a punto.", icon: HeadsetIcon, image: "/images/home-card-remoto.jpg" },
-];
+import { generalWhatsappLink } from "@/lib/site";
 
 const reasons = [
   ["Diagnóstico claro", "Primero entendemos el problema y te explicamos las alternativas sin vueltas."],
@@ -60,7 +51,7 @@ export default function HomePage() {
 
       <section className="trust-bar">
         <div className="shell trust-grid">
-          <div><strong>4</strong><span>frentes de solución</span></div>
+          <div><strong>8</strong><span>servicios disponibles</span></div>
           <div><strong>2</strong><span>modalidades de atención</span></div>
           <div><strong>1</strong><span>contacto directo</span></div>
           <div><strong>360°</strong><span>visión de tu equipo</span></div>
@@ -69,36 +60,20 @@ export default function HomePage() {
 
       <section className="section shell" id="servicios">
         <ScrollReveal>
-          <div className="section-heading split-heading">
-            <div>
-              <div className="eyebrow"><span /> Servicios</div>
-              <h2>Soluciones para cada problema informático</h2>
-            </div>
-            <p>Una propuesta integral que combina soporte técnico, mantenimiento, conectividad y asesoramiento para que tu equipo vuelva a rendir como corresponde.</p>
+          <div className="section-heading center-heading">
+            <div className="eyebrow"><span /> Servicios</div>
+            <h2>Conocé todas nuestras soluciones informáticas</h2>
+            <p>
+              Reparación, mantenimiento, armado de equipos, soporte remoto,
+              redes y asesoramiento en un solo lugar.
+            </p>
+          </div>
+          <div className="center-action">
+            <Link href="/servicios" className="button button-outline">
+              Ver todos los servicios <ArrowRightIcon />
+            </Link>
           </div>
         </ScrollReveal>
-
-        <div className="service-grid">
-          {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <ScrollReveal key={service.title} delay={index * 70}>
-                <article className="service-card">
-                  <div className="service-image"><Image src={service.image} alt="" fill sizes="(max-width: 760px) 100vw, 33vw" /></div>
-                  <div className="service-content">
-                    <div className="service-icon"><Icon /></div>
-                    <h3>{service.title}</h3>
-                    <p>{service.text}</p>
-                    <a href={whatsappLink(`Hola GZO Computación, quiero consultar por ${service.title}.`)} target="_blank" rel="noreferrer">
-                      Consultar <ArrowRightIcon />
-                    </a>
-                  </div>
-                </article>
-              </ScrollReveal>
-            );
-          })}
-        </div>
-        <div className="center-action"><Link href="/servicios" className="button button-outline">Ver todos los servicios <ArrowRightIcon /></Link></div>
       </section>
 
       <section className="section section-panel">
@@ -145,59 +120,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="feature-band">
-        <div className="shell feature-split">
-          <ScrollReveal className="feature-copy">
-            <div className="eyebrow"><span /> Soporte remoto</div>
-            <h2>Ayuda técnica sin perder tiempo.</h2>
-            <p>Para problemas de software, configuración, rendimiento, correo, impresoras o errores del sistema, la asistencia remota puede ser la forma más rápida de avanzar.</p>
-            <ul className="check-list">
-              <li><CheckIcon /> Evaluación previa por WhatsApp</li>
-              <li><CheckIcon /> Conexión guiada y segura</li>
-              <li><CheckIcon /> Explicación clara de lo realizado</li>
-            </ul>
-            <Link href="/soporte-remoto" className="text-link">Conocer soporte remoto <ArrowRightIcon /></Link>
-          </ScrollReveal>
-          <ScrollReveal className="feature-image" delay={120}>
-            <Image src="/images/home-remoto.jpg" alt="Profesionales realizando soporte remoto" fill sizes="(max-width: 900px) 100vw, 50vw" />
-            <div className="image-corner-label">REMOTE<br/><b>SUPPORT</b></div>
-          </ScrollReveal>
-        </div>
-      </section>
-
-      <section className="section shell">
-        <div className="dual-feature">
-          <ScrollReveal className="dual-image">
-            <Image src="/images/home-componentes.jpg" alt="Componentes de una PC de alto rendimiento" fill sizes="(max-width: 900px) 100vw, 50vw" />
-          </ScrollReveal>
-          <ScrollReveal className="dual-copy" delay={100}>
-            <div className="eyebrow"><span /> Armado y actualización</div>
-            <h2>Una PC pensada para lo que realmente necesitás.</h2>
-            <p>Te ayudamos a elegir componentes, equilibrar presupuesto y rendimiento, y evitar compras innecesarias. Para estudiar, trabajar, crear contenido o jugar.</p>
-            <div className="mini-grid">
-              <div><CpuIcon/><span>Componentes compatibles</span></div>
-              <div><SparkIcon/><span>Rendimiento equilibrado</span></div>
-              <div><ShieldIcon/><span>Armado ordenado</span></div>
-              <div><DatabaseIcon/><span>Posibilidad de actualización</span></div>
-            </div>
-            <a href={whatsappLink("Hola GZO Computación, necesito asesoramiento para armar o actualizar una PC.")} className="button button-primary" target="_blank" rel="noreferrer">Consultar armado de PC <ArrowRightIcon /></a>
-          </ScrollReveal>
-        </div>
-      </section>
-
-      <section className="network-section">
-        <Image src="/images/home-redes.jpg" alt="Configuración de redes y conectividad" fill sizes="100vw" />
-        <div className="network-overlay" />
-        <div className="shell network-content">
-          <ScrollReveal>
-            <div className="eyebrow"><span /> Redes y conectividad</div>
-            <h2>Una conexión estable también es parte del sistema.</h2>
-            <p>Configuración de routers, Wi-Fi, cableado y diagnóstico de problemas de red para hogares, espacios de trabajo y pequeños entornos profesionales.</p>
-            <a href={whatsappLink("Hola GZO Computación, necesito ayuda con una red o conexión Wi-Fi.")} className="button button-primary" target="_blank" rel="noreferrer">Consultar por redes <ArrowRightIcon /></a>
-          </ScrollReveal>
-        </div>
-      </section>
-
       <section className="section shell faq-preview">
         <ScrollReveal>
           <div className="section-heading split-heading">
@@ -214,17 +136,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="final-cta">
-        <div className="cta-grid-bg" aria-hidden="true" />
-        <div className="shell final-cta-inner">
-          <ScrollReveal>
-            <div className="eyebrow light"><span /> Hablemos de tu equipo</div>
-            <h2>¿Necesitás una solución informática?</h2>
-            <p>Contanos qué está pasando y te orientamos sobre el próximo paso.</p>
-          </ScrollReveal>
-          <ScrollReveal delay={100}><a href={generalWhatsappLink} className="button button-dark" target="_blank" rel="noreferrer">Escribir por WhatsApp <ArrowRightIcon /></a></ScrollReveal>
-        </div>
-      </section>
+
     </main>
   );
 }

@@ -1,6 +1,4 @@
-import { ArrowRightIcon } from "@/components/icons";
 import { ScrollReveal } from "@/components/scroll-reveal";
-import { generalWhatsappLink } from "@/lib/site";
 
 export const metadata = { title: "Preguntas frecuentes" };
 
@@ -15,4 +13,4 @@ const faqs = [
   ["¿La página toma reservas o pagos?", "No por el momento. La consulta y coordinación se realizan directamente por WhatsApp."],
 ];
 
-export default function FAQPage(){return <main><section className="page-hero"><div className="page-hero-bg"/><div className="shell page-hero-inner"><div><div className="eyebrow"><span/> Preguntas frecuentes</div><h1>Información clara<br/><em>antes de empezar.</em></h1><p>Respuestas rápidas sobre servicios, modalidades y forma de trabajo.</p></div><div className="page-hero-index">03</div></div></section><section className="section shell faq-list">{faqs.map(([q,a],index)=><ScrollReveal key={q} delay={(index%4)*50}><details><summary><span>0{index+1}</span><h2>{q}</h2><i>+</i></summary><p>{a}</p></details></ScrollReveal>)}</section><section className="final-cta compact-cta"><div className="cta-grid-bg"/><div className="shell final-cta-inner"><div><h2>¿Quedó alguna duda?</h2><p>Escribinos y contanos tu caso.</p></div><a href={generalWhatsappLink} className="button button-dark" target="_blank" rel="noreferrer">Consultar <ArrowRightIcon/></a></div></section></main>}
+export default function FAQPage(){return <main><section className="page-hero"><div className="page-hero-bg"/><div className="shell page-hero-inner"><div><div className="eyebrow"><span/> Preguntas frecuentes</div><h1>Información clara<br/><em>antes de empezar.</em></h1><p>Respuestas rápidas sobre servicios, modalidades y forma de trabajo.</p></div><div className="page-hero-index">03</div></div></section><section className="section shell faq-list">{faqs.map(([q,a],index)=><ScrollReveal key={q} delay={(index%4)*50}><details><summary><span>0{index+1}</span><h2>{q}</h2><i>+</i></summary><p>{a}</p></details></ScrollReveal>)}</section></main>}

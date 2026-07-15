@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { ArrowRightIcon, CheckIcon, CpuIcon, DatabaseIcon, HeadsetIcon, LaptopIcon, ShieldIcon, SparkIcon, WifiIcon, WrenchIcon } from "@/components/icons";
+import { CheckIcon, CpuIcon, DatabaseIcon, HeadsetIcon, LaptopIcon, ShieldIcon, SparkIcon, WifiIcon, WrenchIcon } from "@/components/icons";
 import { ScrollReveal } from "@/components/scroll-reveal";
-import { whatsappLink } from "@/lib/site";
 
 const services = [
   { title: "Reparación de PC", subtitle: "Diagnóstico y solución", text: "Fallas de encendido, lentitud, errores del sistema, mantenimiento y revisión de componentes.", icon: WrenchIcon, image: "/images/servicio-reparacion.jpg", points: ["Diagnóstico inicial", "Revisión de hardware", "Optimización general"] },
@@ -37,7 +36,6 @@ export default function ServiciosPage() {
                 <div className="service-detail-title"><div className="service-icon"><Icon/></div><div><span>{service.subtitle}</span><h2>{service.title}</h2></div></div>
                 <p>{service.text}</p>
                 <ul>{service.points.map(point=><li key={point}><CheckIcon/>{point}</li>)}</ul>
-                <a href={whatsappLink(`Hola GZO Computación, quiero consultar por ${service.title}.`)} target="_blank" rel="noreferrer">Consultar servicio <ArrowRightIcon/></a>
               </div>
             </article>
           </ScrollReveal>;
@@ -45,6 +43,6 @@ export default function ServiciosPage() {
       </div>
     </section>
 
-    <section className="final-cta compact-cta"><div className="cta-grid-bg"/><div className="shell final-cta-inner"><div><div className="eyebrow light"><span/> Atención directa</div><h2>¿No sabés qué servicio elegir?</h2><p>Contanos el problema y te orientamos.</p></div><a href={whatsappLink("Hola GZO Computación, necesito ayuda pero no sé qué servicio elegir.")} className="button button-dark" target="_blank" rel="noreferrer">Pedir orientación <ArrowRightIcon/></a></div></section>
+
   </main>;
 }

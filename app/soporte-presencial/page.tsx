@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { ArrowRightIcon, CheckIcon, CpuIcon, LaptopIcon, WrenchIcon } from "@/components/icons";
+import { CheckIcon, CpuIcon, LaptopIcon, WrenchIcon } from "@/components/icons";
 import { ScrollReveal } from "@/components/scroll-reveal";
-import { whatsappLink } from "@/lib/site";
 
 export const metadata = { title: "Soporte presencial" };
 
@@ -10,7 +9,7 @@ export default function SoportePresencialPage() {
     <section className="service-hero">
       <Image src="/images/soporte-presencial-hero.jpg" alt="Técnico revisando una computadora" fill priority sizes="100vw"/>
       <div className="service-hero-overlay"/>
-      <div className="shell service-hero-content"><div className="eyebrow light"><span/> Soporte presencial</div><h1>Cuando el equipo necesita<br/><em>una revisión real.</em></h1><p>Para fallas físicas, mantenimiento, componentes y casos que no pueden resolverse a distancia.</p><a href={whatsappLink("Hola GZO Computación, necesito soporte presencial.")} className="button button-primary" target="_blank" rel="noreferrer">Solicitar atención <ArrowRightIcon/></a></div>
+      <div className="shell service-hero-content"><div className="eyebrow light"><span/> Soporte presencial</div><h1>Cuando el equipo necesita<br/><em>una revisión real.</em></h1><p>Para fallas físicas, mantenimiento, componentes y casos que no pueden resolverse a distancia.</p></div>
     </section>
 
     <section className="section shell">
@@ -32,6 +31,6 @@ export default function SoportePresencialPage() {
       <ScrollReveal className="dual-copy" delay={100}><div className="eyebrow"><span/> Cuidado técnico</div><h2>Orden, diagnóstico y criterio.</h2><p>La revisión de un equipo no debería ser una caja negra. Te explicamos qué encontramos, qué alternativas existen y qué opción tiene más sentido.</p><ul className="check-list"><li><CheckIcon/> Revisión enfocada en la causa</li><li><CheckIcon/> Explicación de alternativas</li><li><CheckIcon/> Recomendaciones para prevenir futuras fallas</li></ul></ScrollReveal>
     </div></section>
 
-    <section className="final-cta compact-cta"><div className="cta-grid-bg"/><div className="shell final-cta-inner"><div><h2>¿Tu equipo necesita revisión?</h2><p>Mandanos los datos y coordinamos.</p></div><a href={whatsappLink("Hola GZO Computación, quiero coordinar una revisión presencial de mi equipo.")} className="button button-dark" target="_blank" rel="noreferrer">Escribir por WhatsApp <ArrowRightIcon/></a></div></section>
+
   </main>;
 }

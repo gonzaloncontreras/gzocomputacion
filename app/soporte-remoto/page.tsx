@@ -1,8 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRightIcon, CheckIcon, HeadsetIcon, MessageIcon, ShieldIcon } from "@/components/icons";
+import { CheckIcon, HeadsetIcon, MessageIcon, ShieldIcon } from "@/components/icons";
 import { ScrollReveal } from "@/components/scroll-reveal";
-import { whatsappLink } from "@/lib/site";
 
 export const metadata = { title: "Soporte remoto" };
 
@@ -11,7 +9,7 @@ export default function SoporteRemotoPage() {
     <section className="service-hero remote-hero">
       <Image src="/images/soporte-remoto-hero.jpg" alt="Soporte informático remoto" fill priority sizes="100vw"/>
       <div className="service-hero-overlay"/>
-      <div className="shell service-hero-content"><div className="eyebrow light"><span/> Soporte remoto</div><h1>Asistencia técnica<br/><em>sin perder tiempo.</em></h1><p>Evaluamos el problema y, cuando es posible, te ayudamos a distancia de forma guiada y segura.</p><a href={whatsappLink("Hola GZO Computación, necesito soporte remoto.")} className="button button-primary" target="_blank" rel="noreferrer">Solicitar soporte remoto <ArrowRightIcon/></a></div>
+      <div className="shell service-hero-content"><div className="eyebrow light"><span/> Soporte remoto</div><h1>Asistencia técnica<br/><em>sin perder tiempo.</em></h1><p>Evaluamos el problema y, cuando es posible, te ayudamos a distancia de forma guiada y segura.</p></div>
     </section>
 
     <section className="section shell remote-layout">
@@ -34,6 +32,6 @@ export default function SoporteRemotoPage() {
       <ScrollReveal className="safe-card" delay={160}><CheckIcon/><h3>Validación final</h3><p>Probamos junto a vos que la solución haya quedado funcionando correctamente.</p></ScrollReveal>
     </div></section>
 
-    <section className="final-cta compact-cta"><div className="cta-grid-bg"/><div className="shell final-cta-inner"><div><h2>¿Tu problema puede resolverse online?</h2><p>Escribinos y lo evaluamos.</p></div><a href={whatsappLink("Hola GZO Computación, quiero saber si mi problema puede resolverse de forma remota.")} className="button button-dark" target="_blank" rel="noreferrer">Consultar ahora <ArrowRightIcon/></a></div></section>
+
   </main>;
 }

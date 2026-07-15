@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { WhatsappIcon } from "@/components/icons";
-import { generalWhatsappLink, site } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export function SiteFooter() {
   return (
@@ -12,9 +11,6 @@ export function SiteFooter() {
           <p>
             Soluciones informáticas con atención directa, diagnóstico claro y una propuesta adaptada a cada equipo.
           </p>
-          <a className="footer-whatsapp" href={generalWhatsappLink} target="_blank" rel="noreferrer">
-            <WhatsappIcon /> Escribir por WhatsApp
-          </a>
         </div>
 
         <div>
