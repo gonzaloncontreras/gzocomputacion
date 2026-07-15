@@ -34,7 +34,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="footer-bottom shell">
-        <span>© {new Date().getFullYear()} GZO Computación.</span>
+        <span>© {new Date().getFullYear()} GZO Computación</span>
       </div>
     </footer>
   );
