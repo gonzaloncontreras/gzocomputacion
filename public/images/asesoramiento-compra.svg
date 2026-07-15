@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Asesoramiento para comprar una computadora</title>
+  <desc id="desc">Ilustración moderna de una computadora, componentes y una lista de selección.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080808"/><stop offset="1" stop-color="#171719"/></linearGradient>
+    <linearGradient id="o2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff9a2e"/><stop offset="1" stop-color="#ff5a00"/></linearGradient>
+    <filter id="ds" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="22" stdDeviation="22" flood-opacity=".65"/></filter>
+    <pattern id="grid2" width="55" height="55" patternUnits="userSpaceOnUse"><path d="M55 0H0V55" fill="none" stroke="#fff" stroke-opacity=".035"/></pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg2)"/><rect width="1600" height="1000" fill="url(#grid2)"/>
+  <circle cx="1190" cy="230" r="255" fill="#ff6a00" opacity=".08"/><circle cx="340" cy="780" r="310" fill="#ff6a00" opacity=".06"/>
+
+  <g filter="url(#ds)">
+    <rect x="175" y="210" width="780" height="505" rx="34" fill="#070707" stroke="#3a3a3f" stroke-width="8"/>
+    <rect x="215" y="250" width="700" height="425" rx="16" fill="#111318"/>
+    <path d="M215 570 430 390l125 105 175-170 185 190v160H215Z" fill="#ff6a00" opacity=".22"/>
+    <path d="m250 605 175-145 130 100 175-165 150 140" fill="none" stroke="url(#o2)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="425" cy="460" r="16" fill="#ff8b1a"/><circle cx="555" cy="560" r="16" fill="#ff8b1a"/><circle cx="730" cy="395" r="16" fill="#ff8b1a"/>
+    <rect x="480" y="715" width="170" height="50" rx="15" fill="#292a2f"/>
+    <path d="M405 800h320" stroke="#3b3c42" stroke-width="36" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#ds)">
+    <rect x="1040" y="165" width="365" height="660" rx="35" fill="#0a0a0b" stroke="#ff6a00" stroke-width="7"/>
+    <rect x="1090" y="225" width="265" height="72" rx="16" fill="url(#o2)"/>
+    <text x="1223" y="273" text-anchor="middle" fill="#090909" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900">ELEGIR MEJOR</text>
+    <g font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#e8e8ea">
+      <circle cx="1125" cy="370" r="18" fill="#ff6a00"/><path d="m1116 370 7 7 14-18" fill="none" stroke="#090909" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><text x="1170" y="379">Uso real</text>
+      <circle cx="1125" cy="465" r="18" fill="#ff6a00"/><path d="m1116 465 7 7 14-18" fill="none" stroke="#090909" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><text x="1170" y="474">Presupuesto</text>
+      <circle cx="1125" cy="560" r="18" fill="#ff6a00"/><path d="m1116 560 7 7 14-18" fill="none" stroke="#090909" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><text x="1170" y="569">Compatibilidad</text>
+      <circle cx="1125" cy="655" r="18" fill="#ff6a00"/><path d="m1116 655 7 7 14-18" fill="none" stroke="#090909" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><text x="1170" y="664">Escalabilidad</text>
+    </g>
+    <rect x="1090" y="735" width="265" height="32" rx="16" fill="#2f3035"/><rect x="1090" y="735" width="205" height="32" rx="16" fill="url(#o2)"/>
+  </g>
+
+  <g transform="translate(760 670)" filter="url(#ds)">
+    <rect width="180" height="180" rx="35" fill="#111216" stroke="#55565d" stroke-width="6"/>
+    <rect x="35" y="35" width="110" height="110" rx="18" fill="#25262c" stroke="#ff6a00" stroke-width="8"/>
+    <path d="M63 64h54v54H63Z" fill="#ff6a00" opacity=".28"/><circle cx="90" cy="91" r="18" fill="#ff7610"/>
+    <g stroke="#ff8c24" stroke-width="6"><path d="M0 42h25M0 78h25M0 114h25M0 150h25M155 42h25M155 78h25M155 114h25M155 150h25"/><path d="M42 0v25M78 0v25M114 0v25M150 0v25M42 155v25M78 155v25M114 155v25M150 155v25"/></g>
+  </g>
+</svg>

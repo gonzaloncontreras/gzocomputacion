@@ -1,0 +1,5 @@
+1. Detener el servidor con Ctrl + C.
+2. Copiar app, public, ASSET_CREDITS.md y LIMPIAR-IMAGENES-ANTERIORES.cmd dentro de la carpeta gzocomputacion.
+3. Aceptar reemplazar archivos.
+4. Ejecutar LIMPIAR-IMAGENES-ANTERIORES.cmd.
+5. Ejecutar npm.cmd run dev.
