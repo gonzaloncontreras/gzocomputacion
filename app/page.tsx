@@ -4,12 +4,6 @@ import { ArrowRightIcon, CheckIcon, CpuIcon, DatabaseIcon, MessageIcon, ShieldIc
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { generalWhatsappLink } from "@/lib/site";
 
-const reasons = [
-  ["Diagnóstico claro", "Primero entendemos el problema y te explicamos las alternativas sin vueltas."],
-  ["Atención personalizada", "Cada equipo y cada uso requieren una solución distinta, no una respuesta genérica."],
-  ["Cuidado del equipo", "Trabajamos con criterio técnico, orden y especial atención a tu información."],
-  ["Contacto directo", "Coordinación simple por WhatsApp, sin formularios eternos ni procesos confusos."],
-];
 
 export default function HomePage() {
   return (
@@ -58,46 +52,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section shell" id="servicios">
-        <ScrollReveal>
-          <div className="section-heading center-heading">
-            <div className="eyebrow"><span /> Servicios</div>
-            <h2>Conocé todas nuestras soluciones informáticas</h2>
-            <p>
-              Reparación, mantenimiento, armado de equipos, soporte remoto,
-              redes y asesoramiento en un solo lugar.
-            </p>
-          </div>
-          <div className="center-action">
-            <Link href="/servicios" className="button button-outline">
-              Ver todos los servicios <ArrowRightIcon />
-            </Link>
-          </div>
-        </ScrollReveal>
-      </section>
+      
 
-      <section className="section section-panel">
-        <div className="shell reasons-layout">
-          <ScrollReveal className="reasons-media">
-            <Image src="/images/home-diagnostico.jpg" alt="Diagnóstico técnico de una computadora" fill sizes="(max-width: 900px) 100vw, 48vw" />
-            <div className="media-caption"><span className="caption-number">01</span><span>Diagnóstico técnico<br/><b>antes de avanzar</b></span></div>
-          </ScrollReveal>
-          <div>
-            <ScrollReveal>
-              <div className="eyebrow"><span /> Por qué GZO</div>
-              <h2>La diferencia está en cómo se resuelve.</h2>
-              <p className="lead">No se trata solo de “hacer que funcione”. Se trata de entender la causa, explicarla con claridad y elegir una solución razonable para tu caso.</p>
-            </ScrollReveal>
-            <div className="reason-list">
-              {reasons.map(([title, text], index) => (
-                <ScrollReveal key={title} delay={index * 80}>
-                  <article><span>0{index + 1}</span><div><h3>{title}</h3><p>{text}</p></div></article>
-                </ScrollReveal>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       <section className="section shell">
         <ScrollReveal>
@@ -120,21 +77,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section shell faq-preview">
-        <ScrollReveal>
-          <div className="section-heading split-heading">
-            <div><div className="eyebrow"><span /> Preguntas frecuentes</div><h2>Antes de escribirnos</h2></div>
-            <Link href="/preguntas-frecuentes" className="text-link">Ver todas <ArrowRightIcon /></Link>
-          </div>
-        </ScrollReveal>
-        <div className="faq-grid">
-          {[
-            ["¿Qué información tengo que enviar?", "Modelo del equipo, problema, desde cuándo ocurre y cualquier mensaje de error."],
-            ["¿Se puede resolver todo de forma remota?", "No. Primero evaluamos el caso y te decimos qué modalidad tiene más sentido."],
-            ["¿También asesoran antes de comprar?", "Sí. Podemos ayudarte a elegir una PC, notebook o componentes según uso y presupuesto."],
-          ].map(([q, a], index) => <ScrollReveal key={q} delay={index*80}><article className="faq-card"><span>0{index+1}</span><h3>{q}</h3><p>{a}</p></article></ScrollReveal>)}
-        </div>
-      </section>
+      
 
 
     </main>

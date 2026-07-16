@@ -5,11 +5,12 @@ export const metadata = { title: "Preguntas frecuentes" };
 const faqs = [
   ["¿Cómo solicito atención?", "Escribinos por WhatsApp con el modelo del equipo y una descripción del problema. Te orientamos sobre el siguiente paso."],
   ["¿Ofrecen soporte remoto?", "Sí. Primero evaluamos el caso y confirmamos si puede resolverse de forma segura a distancia."],
+  ["¿Se puede resolver todo de forma remota?", "No. Primero evaluamos el caso y te decimos qué modalidad tiene más sentido."],
   ["¿También realizan soporte presencial?", "Sí. Para problemas físicos o revisiones que no pueden hacerse online, coordinamos una atención presencial."],
-  ["¿Pueden ayudarme a elegir una PC o notebook?", "Sí. Analizamos uso, programas, presupuesto y posibilidad de actualización para comparar opciones con criterio."],
+  ["¿También asesoran antes de comprar?", "Sí. Podemos ayudarte a elegir una PC, notebook o componentes según uso y presupuesto."],
   ["¿Arman PC gamer o de trabajo?", "Sí. El armado se diseña según el objetivo del equipo, el presupuesto y el equilibrio entre componentes."],
   ["¿Realizan configuración de redes?", "Sí. Podemos revisar routers, Wi-Fi, redes locales y problemas de conectividad."],
-  ["¿Qué información conviene enviar?", "Marca y modelo, problema, antigüedad aproximada, mensajes de error y fotos o capturas cuando sea posible."],
+  ["¿Qué información tengo que enviar?", "Modelo del equipo, problema, desde cuándo ocurre y cualquier mensaje de error."],
   ["¿La página toma reservas o pagos?", "No por el momento. La consulta y coordinación se realizan directamente por WhatsApp."],
 ];
 
