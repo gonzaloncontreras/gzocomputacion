@@ -5,7 +5,7 @@ export const site = {
   whatsappNumber: "541151798570",
   email: "gzocomputacion@gmail.com",
   instagramUrl: "https://www.instagram.com/gzocomputacion/",
-  facebookUrl: "https://www.facebook.com/gzocomputacion/",
+  facebookUrl: "https://www.facebook.com/share/1M7uM9dHef/",
   instagramHandle: "@gzocomputacion",
 };
 
