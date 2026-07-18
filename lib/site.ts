@@ -4,6 +4,9 @@ export const site = {
     "Soluciones informáticas, soporte técnico, armado de PC, redes y asistencia remota.",
   whatsappNumber: "541151798570",
   email: "gzocomputacion@gmail.com",
+  instagramUrl: "https://www.instagram.com/gzocomputacion/",
+  facebookUrl: "https://www.facebook.com/gzocomputacion/",
+  instagramHandle: "@gzocomputacion",
 };
 
 export function whatsappLink(message: string) {
