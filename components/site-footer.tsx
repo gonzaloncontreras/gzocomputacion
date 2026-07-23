@@ -99,9 +99,10 @@ export function SiteFooter() {
             <li>
               <Link href="/preguntas-frecuentes">Preguntas frecuentes</Link>
             </li>
-            <li>
-              <Link href="/contacto">Contacto</Link>
-            </li>
+          </ul>
+
+          <h3>Contacto</h3>
+          <ul>
             <li>
               <a
                 href={`mailto:${site.email}`}
@@ -145,7 +146,7 @@ export function SiteFooter() {
       </div>
 
       <div className="footer-bottom shell">
-        <span>© {new Date().getFullYear()} GZO Computación.</span>
+        <span>© {new Date().getFullYear()} GZO Computación. Todos los derechos reservados.</span>
       </div>
     </footer>
   );
