@@ -12,10 +12,6 @@ export default function ContactoPage() {
           <ScrollReveal>
             <div className="eyebrow"><span /> Contacto</div>
             <h1>Contanos qué necesitás.</h1>
-            <p>
-              El canal principal es WhatsApp. Para iniciar una consulta, usá el botón
-              “Solicitar atención” del encabezado o el botón flotante disponible en toda la web.
-            </p>
           </ScrollReveal>
 
           <ScrollReveal className="contact-card" delay={100}>

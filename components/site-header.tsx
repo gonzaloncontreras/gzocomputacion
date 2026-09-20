@@ -42,11 +42,6 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <a className="header-cta" href={generalWhatsappLink} target="_blank" rel="noreferrer">
-          <WhatsappIcon aria-hidden="true" />
-          <span>Solicitar atención</span>
-        </a>
-
         <button
           className="menu-toggle"
           type="button"
