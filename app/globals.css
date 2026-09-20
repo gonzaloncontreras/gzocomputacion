@@ -675,3 +675,43 @@ h1 em, h2 em { color: var(--orange-2); }
   .page-transition { animation: none; }
   ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
 }
+
+/* Final brand choices: solid header and IBM Plex for GZO Computación. */
+body { font-family: var(--font-plex-sans), Arial, sans-serif; }
+.eyebrow, .tech-strip, .trust-grid span, .process-top span, .service-detail-title span, .site-footer h3 {
+  font-family: var(--font-plex-mono), monospace;
+}
+.site-header {
+  background: #000 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+.brand-link { background: #000 !important; }
+.brand-logo { mix-blend-mode: normal !important; }
+
+.navigation-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 18px;
+  padding: 32px;
+  background: radial-gradient(400px 260px at 50% 38%, rgba(255,107,0,.13), transparent 70%), #070707;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .18s ease, visibility .18s ease;
+}
+.navigation-loader.is-visible { opacity: 1; visibility: visible; }
+.navigation-loader__mark { width: min(280px, 70vw); animation: loader-mark 1.8s ease-in-out infinite; }
+.navigation-loader__mark img { display: block; width: 100%; height: auto; }
+.navigation-loader__bar { width: min(230px, 60vw); height: 3px; overflow: hidden; border-radius: 999px; background: rgba(255,255,255,.14); }
+.navigation-loader__bar span { display: block; width: 42%; height: 100%; border-radius: inherit; background: var(--orange); animation: loader-bar 1.15s cubic-bezier(.6,.05,.35,1) infinite; }
+.navigation-loader > span { color: rgba(255,255,255,.55); font-family: var(--font-plex-mono), monospace; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; }
+
+@media (prefers-reduced-motion: reduce) {
+  .navigation-loader__mark, .navigation-loader__bar span { animation: none; }
+  .navigation-loader { transition: none; }
+}
