@@ -1,6 +1,4 @@
 "use client";
-
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 
@@ -44,11 +42,7 @@ export function NavigationLoader() {
 
   return (
     <div className={`navigation-loader${visible ? " is-visible" : ""}`} aria-hidden={!visible}>
-      <div className="navigation-loader__mark">
-        <Image src="/brand/gzo-logo-fondo-negro.png" alt="" width={240} height={80} priority />
-      </div>
-      <div className="navigation-loader__bar"><span /></div>
-      <span>Preparando tu solución</span>
+      <div className="navigation-loader__spinner" />
     </div>
   );
 }
