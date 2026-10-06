@@ -103,7 +103,7 @@ export function SiteFooter() {
       </div>
 
       <div className="footer-bottom shell">
-        <span>© {new Date().getFullYear()} GZO Computación. Todos los derechos reservados.</span>
+        <span>© {new Date().getFullYear()} gzocomputación. Todos los derechos reservados.</span>
       </div>
     </footer>
   );
