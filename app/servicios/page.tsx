@@ -1,16 +1,16 @@
 import Image from "next/image";
-import { CheckIcon, CpuIcon, DatabaseIcon, HeadsetIcon, LaptopIcon, ShieldIcon, SparkIcon, WifiIcon, WrenchIcon } from "@/components/icons";
+import { CheckIcon, CpuIcon, ShoppingIcon, MemoryIcon, HeadsetIcon, LaptopIcon, ShieldIcon, WifiIcon, WrenchIcon } from "@/components/icons";
 import { ScrollReveal } from "@/components/scroll-reveal";
 
 const services = [
   { title: "Reparación de PC", subtitle: "Diagnóstico y solución", text: "Fallas de encendido, lentitud, errores del sistema, mantenimiento y revisión de componentes.", icon: WrenchIcon, image: "/images/servicio-reparacion.jpg", points: ["Diagnóstico inicial", "Revisión de hardware", "Optimización general"] },
   { title: "Servicio para notebooks", subtitle: "Mantenimiento integral", text: "Limpieza, rendimiento, almacenamiento, memoria y resolución de problemas de software o hardware.", icon: LaptopIcon, image: "/images/servicio-notebooks.jpg", points: ["Limpieza interna", "Cambio o mejora de SSD", "Configuración y software"] },
   { title: "Armado de computadoras", subtitle: "Equipos a medida", text: "Selección de componentes y armado equilibrado según presupuesto, uso y posibilidad de actualización.", icon: CpuIcon, image: "/images/servicio-armado-pc.jpg", points: ["Gaming", "Trabajo y estudio", "Productividad profesional"] },
-  { title: "Actualización de hardware", subtitle: "Más vida útil", text: "Mejoras de rendimiento mediante SSD, memoria RAM, placa de video, refrigeración y otros componentes.", icon: SparkIcon, image: "/images/servicio-hardware.jpg", points: ["Evaluación de compatibilidad", "Priorización del presupuesto", "Instalación ordenada"] },
+  { title: "Actualización de hardware", subtitle: "Más vida útil", text: "Mejoras de rendimiento mediante SSD, memoria RAM, placa de video, refrigeración y otros componentes.", icon: MemoryIcon, image: "/images/servicio-hardware.jpg", points: ["Evaluación de compatibilidad", "Priorización del presupuesto", "Instalación ordenada"] },
   { title: "Redes y conectividad", subtitle: "Conexión estable", text: "Configuración de routers, redes Wi-Fi y LAN, cableado y diagnóstico de problemas de conexión.", icon: WifiIcon, image: "/images/servicio-redes.jpg", points: ["Wi-Fi y routers", "Red local", "Diagnóstico de cortes"] },
   { title: "Soporte remoto", subtitle: "Asistencia online", text: "Ayuda a distancia para configuración, software, errores, correo, impresoras y puesta a punto.", icon: HeadsetIcon, image: "/images/servicio-remoto.jpg", points: ["Evaluación previa", "Conexión guiada", "Atención personalizada"] },
   { title: "Seguridad y respaldo", subtitle: "Protección de información", text: "Revisión de amenazas, buenas prácticas, copias de seguridad y organización básica de datos.", icon: ShieldIcon, image: "/images/seguridad-respaldo-real.jpg", points: ["Prevención", "Respaldo", "Recomendaciones"] },
-  { title: "Asesoramiento de compra", subtitle: "Decisiones con criterio", text: "Comparación de notebooks, PC armadas y componentes para elegir según necesidades reales.", icon: DatabaseIcon, image: "/images/asesoramiento-compra-real.jpg", points: ["Análisis de uso", "Comparación de opciones", "Presupuesto equilibrado"] },
+  { title: "Asesoramiento de compra", subtitle: "Decisiones con criterio", text: "Comparación de notebooks, PC armadas y componentes para elegir según necesidades reales.", icon: ShoppingIcon, image: "/images/asesoramiento-compra-real.jpg", points: ["Análisis de uso", "Comparación de opciones", "Presupuesto equilibrado"] },
 ];
 
 export const metadata = { title: "Servicios" };

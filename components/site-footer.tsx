@@ -1,26 +1,7 @@
+import { EmailIcon, InstagramIcon } from "@/components/icons";
 import { BrandLogo } from "@/components/brand-logo";
 import Link from "next/link";
 import { site } from "@/lib/site";
-
-function InstagramIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      width="20"
-      height="20"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.9"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <rect x="3" y="3" width="18" height="18" rx="5" />
-      <circle cx="12" cy="12" r="4" />
-      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
-    </svg>
-  );
-}
 
 function FacebookIcon() {
   return (
@@ -32,25 +13,6 @@ function FacebookIcon() {
       fill="currentColor"
     >
       <path d="M13.7 21v-8h2.8l.42-3.2H13.7V7.75c0-.93.27-1.56 1.62-1.56H17V3.33A22 22 0 0 0 14.55 3c-2.42 0-4.08 1.45-4.08 4.12V9.8H7.75V13h2.72v8h3.23Z" />
-    </svg>
-  );
-}
-
-function EmailIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      width="20"
-      height="20"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.9"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <rect x="3" y="5" width="18" height="14" rx="2" />
-      <path d="m3 7 9 6 9-6" />
     </svg>
   );
 }

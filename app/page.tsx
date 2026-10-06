@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRightIcon, CheckIcon, CpuIcon, DatabaseIcon, MessageIcon, ShieldIcon, WrenchIcon } from "@/components/icons";
+import { ArrowRightIcon, CheckIcon, CpuIcon, DiagnosisIcon, ValidationIcon, MessageIcon, ShieldIcon, WrenchIcon } from "@/components/icons";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { generalWhatsappLink } from "@/lib/site";
 
@@ -67,9 +67,9 @@ export default function HomePage() {
         <div className="process-grid">
           {[
             [MessageIcon, "Nos contás el problema", "Por WhatsApp, con una descripción del equipo y lo que está pasando."],
-            [DatabaseIcon, "Analizamos el caso", "Definimos si conviene asistencia remota, revisión presencial o asesoramiento."],
+            [DiagnosisIcon, "Analizamos el caso", "Definimos si conviene asistencia remota, revisión presencial o asesoramiento."],
             [WrenchIcon, "Proponemos la solución", "Te explicamos el camino recomendado y coordinamos el trabajo."],
-            [CheckIcon, "Validamos el resultado", "Revisamos que todo quede funcionando y te dejamos recomendaciones."],
+            [ValidationIcon, "Validamos el resultado", "Revisamos que todo quede funcionando y te dejamos recomendaciones."],
           ].map(([Icon, title, text], index) => {
             const C = Icon as typeof MessageIcon;
             return <ScrollReveal key={String(title)} delay={index * 90}><article className="process-card"><div className="process-top"><C/></div><h3>{String(title)}</h3><p>{String(text)}</p></article></ScrollReveal>;

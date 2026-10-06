@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CheckIcon, HeadsetIcon, MessageIcon, ShieldIcon } from "@/components/icons";
+import { CheckIcon, ValidationIcon, HeadsetIcon, MessageIcon, ShieldIcon } from "@/components/icons";
 import { ScrollReveal } from "@/components/scroll-reveal";
 
 export const metadata = { title: "Soporte remoto" };
@@ -29,7 +29,7 @@ export default function SoporteRemotoPage() {
     <section className="section section-panel"><div className="shell safe-grid">
       <ScrollReveal className="safe-card"><ShieldIcon/><h3>Conexión guiada</h3><p>Te explicamos cada paso antes de iniciar y vos mantenés el control de la sesión.</p></ScrollReveal>
       <ScrollReveal className="safe-card" delay={80}><MessageIcon/><h3>Comunicación clara</h3><p>Sabés qué se está revisando y por qué se realiza cada cambio.</p></ScrollReveal>
-      <ScrollReveal className="safe-card" delay={160}><CheckIcon/><h3>Validación final</h3><p>Probamos junto a vos que la solución haya quedado funcionando correctamente.</p></ScrollReveal>
+      <ScrollReveal className="safe-card" delay={160}><ValidationIcon/><h3>Validación final</h3><p>Probamos junto a vos que la solución haya quedado funcionando correctamente.</p></ScrollReveal>
     </div></section>
 
 
