@@ -727,3 +727,22 @@ body { font-family: var(--font-plex-sans), Arial, sans-serif; }
   .navigation-loader__mark, .navigation-loader__bar span, .route-loader__spinner, .navigation-loader__spinner { animation: none; }
   .navigation-loader { transition: none; }
 }
+
+/* Shared family identity: Sora headings, Manrope copy, orange symbol. */
+body,button,input,textarea,select{font-family:var(--font-manrope),Arial,sans-serif}
+h1,h2,h3{font-family:var(--font-sora),Arial,sans-serif;font-weight:600}
+.eyebrow,.tech-strip,.trust-grid span,.process-top span,.service-detail-title span,.site-footer h3,.navigation-loader>span{font-family:var(--font-manrope),Arial,sans-serif}
+.brand-lockup{display:inline-flex;align-items:center;gap:10px;white-space:nowrap}
+.brand-lockup img,.footer-brand .brand-lockup img{display:block;width:44px;height:44px;margin:-4px;object-fit:contain;background:transparent;mix-blend-mode:normal}
+.brand-wordmark{font-family:var(--font-manrope),Arial,sans-serif;font-size:26px;line-height:1.2;letter-spacing:-1.2px;font-weight:750;color:var(--text)}
+.brand-name{font-weight:420}
+.story-logo-panel .brand-lockup{justify-content:center;width:100%;padding:16px 0}
+.story-logo-panel .brand-wordmark{font-size:clamp(22px,2.6vw,32px)}
+.whatsapp-float{width:44px;height:44px;padding:0;display:grid;place-items:center;right:16px;bottom:16px;background:#25d366;color:#061b0d;border:2px solid #061b0d;border-radius:50%;box-shadow:0 0 0 2px #1fbc59,0 8px 24px #0008;isolation:isolate}
+.whatsapp-float svg{width:25px;height:25px}
+.whatsapp-ripple{inset:-3px;border:1px solid #25d366;border-radius:50%;animation:whatsapp-pulse 3s cubic-bezier(.2,.6,.3,1) infinite;pointer-events:none}
+@keyframes whatsapp-pulse{0%,12%{transform:scale(1);opacity:0}20%{opacity:.5}65%,100%{transform:scale(1.4);opacity:0}}
+.whatsapp-float:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 0 0 2px #31df70,0 12px 28px #0009}
+.whatsapp-float:hover .whatsapp-ripple,.whatsapp-float:focus-visible .whatsapp-ripple{visibility:hidden}
+@media(max-width:760px){.brand-lockup img,.footer-brand .brand-lockup img{width:39px;height:39px}.brand-wordmark{font-size:24px}.whatsapp-float{width:44px;height:44px;right:20px;bottom:20px}}
+@media(prefers-reduced-motion:reduce){.whatsapp-ripple{animation:none;opacity:0}}

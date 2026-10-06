@@ -10,9 +10,8 @@ export function WhatsappFloat() {
       className="whatsapp-float"
       aria-label="Consultar por WhatsApp"
     >
-      <span className="whatsapp-ripple" />
+      <span className="whatsapp-ripple" aria-hidden="true" />
       <WhatsappIcon />
-      <span>WhatsApp</span>
     </a>
   );
 }

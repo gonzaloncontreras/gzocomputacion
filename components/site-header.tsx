@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { BrandLogo } from "@/components/brand-logo";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -24,14 +24,7 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="header-inner shell">
         <Link href="/" className="brand-link" aria-label="GZO Computación - Inicio">
-          <Image
-            src="/brand/gzo-logo-fondo-negro.png"
-            alt="GZO Computación"
-            width={300}
-            height={100}
-            priority
-            className="brand-logo"
-          />
+          <BrandLogo priority />
         </Link>
 
         <nav className="desktop-nav" aria-label="Navegación principal">

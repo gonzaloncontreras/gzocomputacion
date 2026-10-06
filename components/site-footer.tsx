@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { BrandLogo } from "@/components/brand-logo";
 import Link from "next/link";
 import { site } from "@/lib/site";
 
@@ -60,12 +60,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="footer-grid shell">
         <div className="footer-brand">
-          <Image
-            src="/brand/gzo-logo-fondo-negro.png"
-            alt="GZO Computación"
-            width={310}
-            height={104}
-          />
+          <Link href="/" aria-label="GZO Computación, inicio"><BrandLogo /></Link>
           <p>
             Soluciones informáticas con atención directa, diagnóstico claro y
             una propuesta adaptada a cada equipo.
