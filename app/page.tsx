@@ -66,13 +66,13 @@ export default function HomePage() {
         </ScrollReveal>
         <div className="process-grid">
           {[
-            [MessageIcon, "01", "Nos contás el problema", "Por WhatsApp, con una descripción del equipo y lo que está pasando."],
-            [DatabaseIcon, "02", "Analizamos el caso", "Definimos si conviene asistencia remota, revisión presencial o asesoramiento."],
-            [WrenchIcon, "03", "Proponemos la solución", "Te explicamos el camino recomendado y coordinamos el trabajo."],
-            [CheckIcon, "04", "Validamos el resultado", "Revisamos que todo quede funcionando y te dejamos recomendaciones."],
-          ].map(([Icon, number, title, text], index) => {
+            [MessageIcon, "Nos contás el problema", "Por WhatsApp, con una descripción del equipo y lo que está pasando."],
+            [DatabaseIcon, "Analizamos el caso", "Definimos si conviene asistencia remota, revisión presencial o asesoramiento."],
+            [WrenchIcon, "Proponemos la solución", "Te explicamos el camino recomendado y coordinamos el trabajo."],
+            [CheckIcon, "Validamos el resultado", "Revisamos que todo quede funcionando y te dejamos recomendaciones."],
+          ].map(([Icon, title, text], index) => {
             const C = Icon as typeof MessageIcon;
-            return <ScrollReveal key={String(number)} delay={index * 90}><article className="process-card"><div className="process-top"><C/><span>{String(number)}</span></div><h3>{String(title)}</h3><p>{String(text)}</p></article></ScrollReveal>;
+            return <ScrollReveal key={String(title)} delay={index * 90}><article className="process-card"><div className="process-top"><C/></div><h3>{String(title)}</h3><p>{String(text)}</p></article></ScrollReveal>;
           })}
         </div>
       </section>

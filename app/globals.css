@@ -765,3 +765,30 @@ h1,h2,h3{font-family:var(--font-sora),Arial,sans-serif;font-weight:600;letter-sp
 .text-link,.service-content a,.service-detail-body>a,.contact-email a{font-weight:500}
 .hero-proof,.mini-grid div,.remote-cases div,.footer-whatsapp{font-weight:500}
 .brand-wordmark{font-weight:750;letter-spacing:-1.2px}.brand-name{font-weight:420}
+
+/* Equal cards and consistent icon geometry throughout the site. */
+.values-grid,.process-grid,.safe-grid,.presential-grid{align-items:stretch}
+.values-grid>.reveal,.process-grid>.reveal,.presential-grid>.reveal{display:flex;min-width:0}
+.values-grid .value-card,.process-grid .process-card,.presential-grid article{width:100%;height:100%}
+.value-card{display:grid;grid-template-rows:56px 50px 1fr;gap:20px;min-height:330px;padding:28px}
+.value-icon{width:56px;height:56px;display:grid;place-items:center;border:1px solid rgba(255,105,0,.24);border-radius:16px;background:rgba(255,105,0,.07);color:var(--orange);transition:background .3s ease,border-color .3s ease}
+.value-icon svg{width:28px;height:28px;transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.value-card h3{font-size:21px;line-height:1.2;margin:0;align-self:center;overflow-wrap:normal}
+.value-card p{margin:0;line-height:1.75;font-size:15px}
+.process-top{justify-content:flex-start}
+.faq-list summary{grid-template-columns:1fr auto;gap:20px}
+.faq-list details>p{padding-left:26px}
+.remote-side li svg{width:18px;height:18px;flex:0 0 auto;color:var(--orange)}
+.service-detail-card,.safe-card,.value-card,.faq-card,.presential-grid article,.presential-card,.contact-card,.remote-side,.remote-cases>.reveal>div,.mini-grid>div{transition:transform .35s cubic-bezier(.16,1,.3,1),border-color .3s ease,box-shadow .35s ease}
+.service-card:focus-within,.service-detail-card:focus-within,.shortcut-grid a:focus-visible{border-color:var(--orange)}
+.faq-list summary{transition:color .25s ease,background .25s ease}
+.faq-list summary:hover,.faq-list details[open] summary{color:var(--orange-2);background:rgba(255,105,0,.035)}
+.faq-list details.is-closing summary i{transform:rotate(0)}
+@media(hover:hover) and (pointer:fine){
+ .value-card:hover,.safe-card:hover,.faq-card:hover,.presential-grid article:hover,.service-detail-card:hover,.contact-card:hover,.remote-side:hover,.presential-card:hover{transform:translateY(-5px);border-color:rgba(255,105,0,.45);box-shadow:0 22px 45px #0004}
+ .value-card:hover .value-icon{background:rgba(255,105,0,.13);border-color:rgba(255,105,0,.5)}
+ .value-card:hover .value-icon svg{transform:scale(1.08)}
+ .remote-cases>.reveal>div:hover,.mini-grid>div:hover{transform:translateY(-3px);border-color:rgba(255,105,0,.4)}
+}
+@media(max-width:760px){.value-card{min-height:0;grid-template-rows:56px auto 1fr}.value-card h3{min-height:0}}
+@media(prefers-reduced-motion:reduce){.value-card:hover,.safe-card:hover,.faq-card:hover,.presential-grid article:hover,.service-detail-card:hover,.contact-card:hover,.remote-side:hover,.presential-card:hover,.value-card:hover .value-icon svg,.remote-cases>.reveal>div:hover,.mini-grid>div:hover{transform:none}}

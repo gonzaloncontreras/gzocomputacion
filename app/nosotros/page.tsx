@@ -6,7 +6,7 @@ export const metadata = { title: "Nosotros" };
 
 export default function NosotrosPage() {
   return <main>
-    <section className="page-hero"><div className="page-hero-bg"/><div className="shell page-hero-inner"><div><div className="eyebrow"><span/> Nosotros</div><h1>Tecnología con<br/><em>criterio humano.</em></h1><p>GZO Computación nace para brindar soluciones informáticas claras, cercanas y técnicamente responsables.</p></div><div className="page-hero-index">02</div></div></section>
+    <section className="page-hero"><div className="page-hero-bg"/><div className="shell page-hero-inner"><div><div className="eyebrow"><span/> Nosotros</div><h1>Tecnología con<br/><em>criterio humano.</em></h1><p>GZO Computación nace para brindar soluciones informáticas claras, cercanas y técnicamente responsables.</p></div></div></section>
 
     <section className="section shell story-grid">
       <ScrollReveal className="story-image">
@@ -21,7 +21,7 @@ export default function NosotrosPage() {
         [ShieldIcon,"Responsabilidad","Cuidado del equipo y de la información durante cada intervención."],
         [CpuIcon,"Criterio técnico","Recomendaciones basadas en compatibilidad, rendimiento y uso real."],
         [SparkIcon,"Mejora continua","Búsqueda de soluciones modernas, eficientes y sostenibles en el tiempo."],
-      ].map(([Icon,title,text],index)=>{const C=Icon as typeof CpuIcon;return <ScrollReveal key={String(title)} delay={index*70}><article className="value-card"><C/><span>0{index+1}</span><h3>{String(title)}</h3><p>{String(text)}</p></article></ScrollReveal>})}
+      ].map(([Icon,title,text],index)=>{const C=Icon as typeof CpuIcon;return <ScrollReveal key={String(title)} delay={index*70}><article className="value-card"><div className="value-icon" aria-hidden="true"><C/></div><h3>{String(title)}</h3><p>{String(text)}</p></article></ScrollReveal>})}
     </div></section>
 
 

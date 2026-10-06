@@ -16,13 +16,13 @@ export default function SoporteRemotoPage() {
       <div>
         <ScrollReveal><div className="eyebrow"><span/> Qué podemos resolver</div><h2>Problemas de software, configuración y rendimiento.</h2><p className="lead">El soporte remoto es ideal cuando el equipo enciende y tiene conexión a internet, pero presenta errores o necesita configuración.</p></ScrollReveal>
         <div className="remote-cases">
-          {["Windows lento o con errores","Instalación y configuración de programas","Correo, impresoras y periféricos","Limpieza lógica y programas de inicio","Configuración básica de seguridad","Orientación y diagnóstico inicial"].map((item,index)=><ScrollReveal key={item} delay={index*60}><div><span>0{index+1}</span>{item}</div></ScrollReveal>)}
+          {["Windows lento o con errores","Instalación y configuración de programas","Correo, impresoras y periféricos","Limpieza lógica y programas de inicio","Configuración básica de seguridad","Orientación y diagnóstico inicial"].map((item,index)=><ScrollReveal key={item} delay={index*60}><div>{item}</div></ScrollReveal>)}
         </div>
       </div>
       <ScrollReveal className="remote-side" delay={100}>
         <HeadsetIcon/>
         <h3>¿Cómo funciona?</h3>
-        <ol><li><span>1</span>Nos escribís y describís el problema.</li><li><span>2</span>Confirmamos si puede resolverse a distancia.</li><li><span>3</span>Te guiamos para realizar la conexión.</li><li><span>4</span>Trabajamos y verificamos el resultado.</li></ol>
+        <ol><li><CheckIcon/>Nos escribís y describís el problema.</li><li><CheckIcon/>Confirmamos si puede resolverse a distancia.</li><li><CheckIcon/>Te guiamos para realizar la conexión.</li><li><CheckIcon/>Trabajamos y verificamos el resultado.</li></ol>
       </ScrollReveal>
     </section>
 

@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { NavigationLoader } from "@/components/navigation-loader";
 import { WhatsappFloat } from "@/components/whatsapp-float";
+import { SiteInteractions } from "@/components/site-interactions";
 import "./globals.css";
 
 const manrope = Manrope({subsets:["latin"],variable:"--font-manrope",display:"swap"});
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <SiteFooter />
         <WhatsappFloat />
         <NavigationLoader />
+        <SiteInteractions />
       </body>
     </html>
   );

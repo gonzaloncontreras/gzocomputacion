@@ -22,7 +22,7 @@ export default function SoportePresencialPage() {
           [LaptopIcon,"Notebooks","Limpieza, rendimiento, almacenamiento, memoria, software y diagnóstico de fallas."],
           [CpuIcon,"PC de escritorio","Encendido, componentes, temperatura, rendimiento, actualizaciones y armado."],
           [WrenchIcon,"Mantenimiento","Limpieza interna, revisión preventiva y recomendaciones de uso."],
-        ].map(([Icon,title,text],index)=>{const C=Icon as typeof WrenchIcon; return <ScrollReveal key={String(title)} delay={index*80}><article><C/><span>0{index+1}</span><h3>{String(title)}</h3><p>{String(text)}</p></article></ScrollReveal>})}
+        ].map(([Icon,title,text],index)=>{const C=Icon as typeof WrenchIcon; return <ScrollReveal key={String(title)} delay={index*80}><article><C/><h3>{String(title)}</h3><p>{String(text)}</p></article></ScrollReveal>})}
       </div>
     </section>
 

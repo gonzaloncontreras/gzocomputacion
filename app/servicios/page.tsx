@@ -21,7 +21,7 @@ export default function ServiciosPage() {
       <div className="page-hero-bg" />
       <div className="shell page-hero-inner">
         <div><div className="eyebrow"><span /> Servicios</div><h1>Soluciones informáticas<br/><em>de punta a punta.</em></h1><p>Desde una falla puntual hasta el armado completo de un equipo o la mejora de una red.</p></div>
-        <div className="page-hero-index">01</div>
+        
       </div>
     </section>
 
@@ -31,7 +31,7 @@ export default function ServiciosPage() {
           const Icon = service.icon;
           return <ScrollReveal key={service.title} delay={(index%4)*60}>
             <article className="service-detail-card">
-              <div className="service-detail-image"><Image src={service.image} alt="" fill sizes="(max-width: 900px) 100vw, 50vw"/><div className="service-detail-number">0{index+1}</div></div>
+              <div className="service-detail-image"><Image src={service.image} alt="" fill sizes="(max-width: 900px) 100vw, 50vw"/></div>
               <div className="service-detail-body">
                 <div className="service-detail-title"><div className="service-icon"><Icon/></div><div><span>{service.subtitle}</span><h2>{service.title}</h2></div></div>
                 <p>{service.text}</p>
