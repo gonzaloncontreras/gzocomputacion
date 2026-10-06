@@ -746,3 +746,9 @@ h1,h2,h3{font-family:var(--font-sora),Arial,sans-serif;font-weight:600}
 .whatsapp-float:hover .whatsapp-ripple,.whatsapp-float:focus-visible .whatsapp-ripple{visibility:hidden}
 @media(max-width:760px){.brand-lockup img,.footer-brand .brand-lockup img{width:39px;height:39px}.brand-wordmark{font-size:24px}.whatsapp-float{width:44px;height:44px;right:20px;bottom:20px}}
 @media(prefers-reduced-motion:reduce){.whatsapp-ripple{animation:none;opacity:0}}
+
+/* Match GZO System's subtle header transparency, retaining the orange identity. */
+.site-header{background:rgba(0,0,0,.87)!important;backdrop-filter:blur(16px)!important;-webkit-backdrop-filter:blur(16px)!important}
+.brand-link{background:transparent!important;opacity:.9}
+.site-header .desktop-nav{opacity:.94}
+@media(prefers-reduced-transparency:reduce){.site-header{background:#000!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}.brand-link,.site-header .desktop-nav{opacity:1}}
