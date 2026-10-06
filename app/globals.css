@@ -792,3 +792,22 @@ h1,h2,h3{font-family:var(--font-sora),Arial,sans-serif;font-weight:600;letter-sp
 }
 @media(max-width:760px){.value-card{min-height:0;grid-template-rows:56px auto 1fr}.value-card h3{min-height:0}}
 @media(prefers-reduced-motion:reduce){.value-card:hover,.safe-card:hover,.faq-card:hover,.presential-grid article:hover,.service-detail-card:hover,.contact-card:hover,.remote-side:hover,.presential-card:hover,.value-card:hover .value-icon svg,.remote-cases>.reveal>div:hover,.mini-grid>div:hover{transform:none}}
+
+/* Shared typography scale: the same roles and viewport sizing as GZO System. */
+:root{--type-display:clamp(53px,calc(11svh - 1px),105px);--type-section:clamp(27px,calc(4.8svh - 1px),47px);--type-card:clamp(20px,calc(3.5svh - 1px),27px);--type-copy:14px;--type-lead:17px}
+body{font-family:var(--font-manrope),Arial,sans-serif;font-size:15px;font-weight:400}
+h1,h2,h3{font-family:var(--font-sora),Arial,sans-serif;font-weight:600}
+h1,.hero h1,.hero-copy h1{font-size:var(--type-display);font-weight:700;line-height:1.02;letter-spacing:-.07em;margin-bottom:28px}
+h2{font-size:var(--type-section);line-height:1.12;letter-spacing:-.055em}
+h3,.service-detail-title h2,.contact-card h2{font-size:var(--type-card);line-height:1.25;letter-spacing:-.035em}
+p,.service-content p,.service-detail-body p,.safe-card p,.presential-grid p,.remote-side p{font-size:var(--type-copy);line-height:1.75}
+.lead,.hero-copy p,.page-hero-inner p,.service-hero-content>p,.contact-grid>div:first-child p{font-size:var(--type-lead);line-height:1.6}
+.split-heading p,.center-heading p,.feature-copy p,.dual-copy p,.network-content p,.story-copy p,.final-cta p{font-size:15px;line-height:1.7}
+.process-card h3,.reason-list h3,.faq-card h3,.value-card h3,.shortcut-grid h3{font-size:19px;line-height:1.35}
+.value-card p,.process-card p{font-size:14px;line-height:1.65}
+.faq-list summary h2{font-family:var(--font-manrope),Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.5;letter-spacing:normal}
+.faq-list details>p{font-size:13px;line-height:1.6}
+.button,.header-cta{font-size:14px}.text-link,.service-content a,.service-detail-body>a,.contact-email a,.contact-card li,.footer-whatsapp{font-size:13px}
+.eyebrow{font-size:11px}.hero-proof,.mini-grid div,.remote-cases div,.service-detail-body li{font-size:12px}
+.site-footer p,.site-footer li,.site-footer h3,.footer-bottom{font-size:13px}
+@media(max-width:760px){:root{--type-display:clamp(44px,calc(12vw - 1px),64px);--type-section:clamp(27px,8vw,35px);--type-card:24px;--type-lead:15px}.hero-copy p{font-size:15px}.brand-wordmark{font-size:24px}}

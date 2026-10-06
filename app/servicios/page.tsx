@@ -21,7 +21,7 @@ export default function ServiciosPage() {
       <div className="page-hero-bg" />
       <div className="shell page-hero-inner">
         <div><div className="eyebrow"><span /> Servicios</div><h1>Soluciones informáticas<br/><em>de punta a punta.</em></h1><p>Desde una falla puntual hasta el armado completo de un equipo o la mejora de una red.</p></div>
-        
+
       </div>
     </section>
 
