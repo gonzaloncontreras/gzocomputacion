@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { BrandLogo } from "@/components/brand-logo";
 import { CheckIcon, CpuIcon, MessageIcon, ShieldIcon, SparkIcon } from "@/components/icons";
 import { ScrollReveal } from "@/components/scroll-reveal";
 
@@ -12,9 +11,6 @@ export default function NosotrosPage() {
     <section className="section shell story-grid">
       <ScrollReveal className="story-image">
         <Image src="/images/nosotros-pc.jpg" alt="Computadora de escritorio de alto rendimiento" fill sizes="(max-width:900px) 100vw, 50vw"/>
-        <div className="story-logo-panel">
-          <span aria-label="GZO Computación"><BrandLogo /></span>
-        </div>
       </ScrollReveal>
       <ScrollReveal className="story-copy" delay={100}><div className="eyebrow"><span/> Nuestra forma de trabajar</div><h2>Resolver bien también significa explicar bien.</h2><p>La informática puede volverse frustrante cuando aparecen fallas, mensajes extraños o compras difíciles de comparar. Nuestro enfoque es bajar esa complejidad a decisiones concretas.</p><p>Analizamos el contexto, el uso real del equipo y el presupuesto antes de recomendar una reparación, una mejora o una compra.</p><ul className="check-list"><li><CheckIcon/> Diagnóstico antes de recomendar</li><li><CheckIcon/> Comunicación directa</li><li><CheckIcon/> Soluciones proporcionales al problema</li></ul></ScrollReveal>
     </section>
